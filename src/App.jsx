@@ -1,30 +1,23 @@
-import { useState } from 'react'
+import { useState } from "react"
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Card from './Card.jsx'
 import './App.css'
+import { IoMusicalNotes } from "react-icons/io5";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>oi mundo</h1>
-
-      <div className='card'>
-        Som de chuva
-      </div>
-
-      <div className='card'>
-        Som de vento
-      </div>
-
-      <div className='card'>
-        Som de fogueira
+      <h1>Olá, Mundo</h1>
+      <IoMusicalNotes />
+      <div className="cards">
+        <Card texto="Som de chuva"/>
+        <Card texto="Som de vento"/>
+        <Card texto="Som de ondas"/>
       </div>
     </>
   )
 }
 
 export default App
-
-
